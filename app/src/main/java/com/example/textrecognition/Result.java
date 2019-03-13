@@ -19,6 +19,7 @@ public class Result extends AppCompatActivity {
         button=findViewById(R.id.back_button);
         textView=findViewById(R.id.result_textview);
         text=getIntent().getStringExtra(textRecog.Result_Text);
+        textView.setText(text);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
